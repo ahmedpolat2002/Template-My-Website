@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* بصير السكرول الطف شوية */
+    /* background-color: #000000; */
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    /*تمكني من ترك الهيدر موجود لو نزلت لتحت*/
+    z-index: 999;
+    /*يترك الهيدر في الاعلى ولا ينزل تحت اي شيء*/
+    display: flex;
+    justify-content: space-between;
+    /*تعطي مسافة بين العناصر الموجودة في الهيدر*/
+    align-items: center;
+    padding: 10px 200px;
+    /*تعطي مسافة من الاطراف وايضا مسافة من الاعلى والاسفل*/
+}
+
+.logo {
+    text-decoration: none;
+    /*تزيل الخط من تحت الرابط*/
+    color: #3a6cf4;
+    text-transform: uppercase;
+    /*تكبير الاحرف كلها*/
+    font-weight: 700;
+    font-size: 1.8em;
+    /*الفكرة انو بقدر اغير الحجم بسهولة من البكسل*/
+}
+
+.Navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    /*تباعد بين الروابط*/
+}
+
+.Navigation a:hover {
+    color: #601cfc;
+}
+
+section {
+    padding: 100px 200px 100px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    /* أقل جملة تبقى بحجم هذه */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: url(business-3d-happy-robot-assistant-waving-hello.png); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-attachment: fixed; */
+}
+
+.main .s-main {
+    padding-top: 40px;
+}
+
+.main .s-main h2 {
+    color: #000000;
+    font-size: 1, 4em;
+    font-weight: 500;
+}
+
+.main .s-main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.main .s-main h3 {
+    display: block;
+    color: #777777;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0004ff;
+    transform: scale(1.1, 1.1);
+}
+
+.social-icons a {
+    color: #3a6cf4;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.main .img {
+    width: 30%;
+}
+
+.main .img img {
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    /* background-color: #000000; */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 15.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 5em;
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px;
+}
+
+.info p {
+    color: #777777;
+    text-align: center;
+}
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: solid 1px #fff;
+    min-height: 12em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.project-title span {
+    font-size: 0.8em;
+}
+
+.project-title .more-details {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    header .Navigation a {
+        font-size: 0.9em;
+        padding-left: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main .s-main {
+        text-align: center;
+    }
+
+    .main .s-main h2 span {
+        font-size: 20px;
+    }
+
+    .main .s-main .social-icons a {
+        padding: 0 5px;
+    }
+
+    .main .img {
+        padding-top: 20px;
+    }
+
+    .Navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
